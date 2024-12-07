@@ -1,0 +1,78 @@
+/* Styles pour la section Menu */
+#menu {
+    background-color: #f4f4f4;
+    /* Fond clair pour le contraste */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #006e3b;
+    /* Couleur principale */
+    margin-bottom: 2rem;
+}
+
+.menu-category {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.menu-category .menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-category .menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-category .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.menu-category .menu-item h3 {
+    font-size: 1.6rem;
+    color: #01180e;
+    /* Couleur sombre pour les titres */
+    margin-bottom: 0.5rem;
+}
+
+.menu-category .menu-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.menu-category .menu-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eca618;
+    /* Couleur secondaire pour les prix */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .menu-category {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-category .menu-item {
+        width: 90%;
+    }
+}
