@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/navbar.css">
-  <title>Brew Lounge</title>
-</head>
-<body>
-  <nav>
-    <div class="logo">
-      <img src="images/brewIcone.jpg" alt="Logo Brew Lounge">
-      <h1>Brew Lounge</h1>
-    </div>
-    <ul>
-      <li><a href="#accueil" class="active">Accueil</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Contenu des sections -->
-  <section id="accueil">
-    <h2>Bienvenue chez Brew Lounge</h2>
-  </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/acceuil.css">
+    <link rel="stylesheet" href="./styles/principal.css">
+    <title>Brew Lounge</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/brewIcone.jpg" alt="Logo Brew Lounge">
+            <h1>Brew Lounge</h1>
+        </div>
+        <ul>
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="accueil">
+        <!-- Partie gauche : image -->
+        <div class="image-container">
+            <img src="images/acceuil.jpg" alt="Brew Lounge Restaurant">
+        </div>
+
+        <!-- Partie droite : texte d'accueil -->
+        <div class="content">
+            <h2>Bienvenue au Brew Lounge</h2>
+            <p>Venez découvrir notre espace chaleureux où l'art de brasser rencontre une ambiance conviviale. Que ce
+                soit pour un repas entre amis ou une soirée détente, nous vous offrons une expérience inoubliable.
+                Laissez-vous emporter par notre menu créatif et nos bières artisanales exclusives.</p>
+            <a href="#menu" class="cta-btn">Découvrez notre menu</a>
+        </div>
+    </section>
+
 </body>
+
 </html>
