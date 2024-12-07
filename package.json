@@ -1,0 +1,19 @@
+{
+  "name": "brew-lounge-websites",
+  "version": "1.0.0",
+  "description": "This is a site static for brew-lounge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dyxrandrian/brew-lounge-website.git"
+  },
+  "author": "Dyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dyxrandrian/brew-lounge-website/issues"
+  },
+  "homepage": "https://github.com/Dyxrandrian/brew-lounge-website#readme"
+}
