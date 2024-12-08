@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./styles/acceuil.css">
     <link rel="stylesheet" href="./styles/principal.css">
     <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script src="./scripts/gallery.js" defer></script>
     <title>Brew Lounge</title>
 </head>
 
@@ -18,28 +21,27 @@
             <h1>Brew Lounge</h1>
         </div>
         <ul>
-            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#home" class="active">Accueil</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#gallery">Galerie</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="accueil">
-        <!-- Partie gauche : image -->
-        <div class="image-container">
-            <img src="images/acceuil.jpg" alt="Brew Lounge Restaurant">
-        </div>
-
-        <!-- Partie droite : texte d'accueil -->
-        <div class="content">
-            <h2>Bienvenue au Brew Lounge</h2>
-            <p>Venez découvrir notre espace chaleureux où l'art de brasser rencontre une ambiance conviviale. Que ce
-                soit pour un repas entre amis ou une soirée détente, nous vous offrons une expérience inoubliable.
-                Laissez-vous emporter par notre menu créatif et nos bières artisanales exclusives.</p>
-            <a href="#menu" class="cta-btn">Découvrez notre menu</a>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-left">
+                <img src="./images/bienvenu-removebg-preview.png" alt="Avatar Bonhomme" class="avatar">
+            </div>
+            <div class="home-right">
+                <div class="welcome-text">
+                    <h1>BIENVENUE</h1>
+                    <h2>AU BREW LOUNGE</h2>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <section id="menu">
         <h2>Nos Spécialites</h2>
@@ -65,11 +67,49 @@
             <div class="menu-item">
                 <img src="images/choco.jpg" alt="Dessert 1">
                 <h3>Big Choco</h3>
-                <p>Une délicieuse tarte aux pommes caramélisées, servie avec une boule de glace vanille.</p>
+                <p>Une délicieuse tarte aux chocolat caramélisées, servie avec une boule de glace vanille.</p>
                 <span class="price">15K</span>
             </div>
         </div>
     </section>
+
+    <section id="gallery">
+        <h2>Notre Galerie</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="./images/people.jpg" class="carousel-item active" alt="Photo 1">
+                <img src="./images/crevette.jpg" class="carousel-item" alt="Photo 2">
+                <img src="./images/people3.jpg" class="carousel-item" alt="Photo 3">
+                <img src="./images/poulet.jpg" class="carousel-item" alt="Photo 4">
+                <img src="./images/people1.jpg" class="carousel-item" alt="Photo 5">
+                <img src="./images/divers.jpg" class="carousel-item" alt="Photo 6">
+            </div>
+            <button class="arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+            <button class="arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Envoyez-nous un message</h3>
+                <form action="#">
+                    <input type="text" placeholder="Votre nom" required />
+                    <input type="email" placeholder="Votre email" required />
+                    <textarea placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Nos Informations</h3>
+                <p><strong>Adresse:</strong>Logement II 17 cter Ambatobe Ambany, Antananarivo, Madagascar</p>
+                <p><strong>Email:</strong>brewmdg@gmail.com</p>
+                <p><strong>Téléphone:</strong>+261 38 97 704 33</p>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 

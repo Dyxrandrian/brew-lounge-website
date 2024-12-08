@@ -1,0 +1,82 @@
+/* Styles pour la galerie */
+#gallery {
+    background-color: #f4f4f4;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    color: #006e3b;
+    /* Couleur principale */
+    margin-bottom: 2rem;
+}
+
+/* Conteneur principal du carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    perspective: 1000px;
+    /* Ajoute la perspective 3D */
+    overflow: hidden;
+}
+
+/* Carousel avec effet 3D */
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+/* Styles des images */
+.carousel-item {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Flèches de navigation */
+.arrow {
+    position: absolute;
+    top: 50%;
+    background-color: #eca618;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: #b3c0b1;
+    /* Couleur tertiaire au survol */
+}
