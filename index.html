@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/gallery.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/specialites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="./scripts/gallery.js" defer></script>
+    <script src="./scripts/specialites.js" defer></script>
     <title>Brew Lounge</title>
 </head>
 
@@ -22,6 +26,7 @@
         </div>
         <ul>
             <li><a href="#home" class="active">Accueil</a></li>
+            <li><a href="#specialites">Spécialités</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#gallery">Galerie</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -41,7 +46,6 @@
             </div>
         </div>
     </section>
-    
 
     <section id="menu">
         <h2>Nos Spécialites</h2>
@@ -72,6 +76,50 @@
             </div>
         </div>
     </section>
+
+    <div class="specialites-container">
+        <div class="specialites-carousel">
+            <!-- Chaque item représente une spécialité avec une image et un nom -->
+            <div class="specialite-item">
+                <img src="./images/specialtes.jpg" alt="Spécialité 1">
+                <p class="specialite-name">Plat 1</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites1.jpg" alt="Spécialité 2">
+                <p class="specialite-name">Plat 2</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites2.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites3.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites4.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites5.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites6.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <div class="specialite-item">
+                <img src="./images/specialites7.jpg" alt="Spécialité 3">
+                <p class="specialite-name">Plat 3</p>
+            </div>
+            <!-- Ajouter autant d'items que nécessaire -->
+        </div>
+        <!-- Boutons de navigation -->
+        <button class="spt-prev-btn">←</button>
+        <button class="spt-next-btn">→</button>
+    </div>
+    
+
 
     <section id="gallery">
         <h2>Notre Galerie</h2>
@@ -109,6 +157,32 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Brew Lounge</h3>
+                <p>123 Rue du Bonheur, Antananarivo</p>
+                <p>Téléphone : +261 32 45 67 89</p>
+                <p>Email : contact@brewlounge.com</p>
+            </div>
+
+            <div class="footer-logo">
+                <img src="images/wait-removebg-preview.png" alt="Brew Lounge Logo">
+            </div>
+
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <a href="https://www.facebook.com/brewmdg"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Brew Lounge. Tous droits réservés.</p>
+        </div>
+    </footer>
+
 
 
 </body>

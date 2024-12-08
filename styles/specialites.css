@@ -1,0 +1,76 @@
+/* Conteneur du carrousel */
+.specialites-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Carrousel avec effet 3D */
+.specialites-carousel {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+/* Item de spécialité */
+.specialite-item {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+    transition: transform 1s ease;
+    transform: scale(0.8);  /* Par défaut, les images sont réduites */
+}
+
+/* Image active au centre */
+.specialite-item.active {
+    transform: scale(1);   /* L'image active est à sa taille normale */
+}
+
+/* Style pour l'image des spécialités */
+.specialite-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Texte sous chaque image */
+.specialite-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Boutons de navigation */
+.spt-prev-btn,
+.spt-next-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.spt-prev-btn {
+    left: 10px;
+}
+
+.spt-next-btn {
+    right: 10px;
+}
